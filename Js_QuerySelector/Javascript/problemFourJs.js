@@ -1,0 +1,19 @@
+function changeImageSize()
+{
+	document.querySelector("#resOne").style.width="100px";
+	document.querySelector("#resOne").style.height="100px";
+	document.querySelector("#resTwo").style.width="100px";
+	document.querySelector("#resTwo").style.height="100px";
+	document.querySelector("#resThree").style.width="100px";
+	document.querySelector("#resThree").style.height="100px";
+	document.querySelector("#resFour").style.width="100px";
+	document.querySelector("#resFour").style.height="100px";
+	document.querySelector("#resFive").style.width="100px";
+	document.querySelector("#resFive").style.height="100px";
+	document.querySelector("#resSix").style.width="100px";
+	document.querySelector("#resSix").style.height="100px";
+	document.querySelector("#resSeven").style.width="100px";
+	document.querySelector("#resSeven").style.height="100px";
+	document.querySelector("#resEight").style.width="100px";
+	document.querySelector("#resEight").style.height="100px";
+}

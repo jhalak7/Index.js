@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" src="../Javascript/rockPaperjs.js"></script>  
+	<style type="text/css">
+		#first {
+			width: 360px;
+			height: 320px;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			background-color: #e7f5fe;
+			display:inline-block;		
+			margin-top: 160px;
+			margin-left: 450px;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif;
+
+}
+</style>
+</head>
+<body>
+ <div id="first">
+
+    	<form style="margin-left: 10px">
+    	Stone: <input type="radio" name="rock" id="rocke" style="margin-top: 20px; margin-left: 30px">
+    	<br>
+    	<br>
+    	<br>
+    	Paper: <input type="radio" name="rock" id="paper" style="margin-left: 24px">
+    	<br>
+    	<br>
+    	<br>
+    	Scissor: <input type="radio" name="rock" id="scissor" style="margin-left: 14px">
+        
+      </form>
+      <button style="background-color: #0000ff; margin-top: 30px;text-align: center;margin-left: 70px;width: 70px;height: 30px;color: #FFFFFF;border-radius: 6px" onclick="resultfun()">Submit</button>
+
+      <p id="com" style="text-align: center;"> Computer chooses: </p>
+      <p id="result" style="text-align: center;"> Result will be shown here</p>
+
+     </div>
+
+</body>
+</html>

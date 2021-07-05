@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style type="text/css">
+        h1{
+            font-size: 36px;
+        }
+        div{
+            
+            border: 10px solid black;
+        }
+        </style>
+     <script>
+          var i=0;
+            window.onload = function() {
+                sessionStorage.setItem("counter",i++);
+                document.addEventListener('contextmenu', function(e){
+                    e.preventDefault();
+                    if(event.keyCode == 123) {
+                    disableEvent(e);
+                }
+                }, false);
+             function disableEvent(e) {
+                    if(e.stopPropagation) {
+                        e.stopPropagation();
+                    } else if(window.event) {
+                        window.event.cancelBubble = true;
+                    }
+                }
+            }
+
+            var thePdf = null;
+            var scale = 1;
+            function pdfLoad() {
+            
+            sessionStorage.setItem("counter",i++);
+            var counter=sessionStorage.getItem("counter")+'.pdf';
+            $(document).contextmenu(function() { return false;});
+            pdfjsLib.getDocument(counter).promise.then(function(pdf) {
+                      thePdf = pdf;
+                      var newDiv=document.createElement('div');
+                      console.log(document.getElementsByTagName('div'));
+                      newDiv.setAttribute('id',sessionStorage.getItem("counter"));
+                      document.getElementsByTagName('body')[0].appendChild(newDiv);
+                      viewer=document.getElementById(sessionStorage.getItem('counter'));
+                      document.createElement('h1').appendChild(document.createTextNode("PDF is a written voice"));
+                      for(page = 1; page <= pdf.numPages; page++) {
+
+                        canvas = document.createElement('canvas');
+                        viewer.appendChild(canvas);
+                        renderPage(page, canvas);
+                      }
+                  });
+                
+            }
+                  function renderPage(pageNumber, canvas) {
+                      thePdf.getPage(pageNumber).then(function(page) {
+                        viewport = page.getViewport(scale);
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+                        page.render({canvasContext: canvas.getContext('2d'), viewport: viewport});
+                  });
+                  }
+            </script>
+    </head>
+             <body>
+                 
+                 <button onclick="pdfLoad()">Add pdf</button>
+             </body>
+</html>

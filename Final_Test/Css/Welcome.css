@@ -1,0 +1,40 @@
+#set {
+			width: 100%;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			background-color: #ffffff;
+			display:inline-block;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif; 
+			margin-top: 10px;
+
+}
+#setTwo{
+			width: 100%;
+			height: 70px;
+			background-color: #48bf91;
+			display:inline-block;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-top: 20px;
+
+}
+#setThree {
+			width: 70%;
+			height: 320px;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			background-color: #ffb6c1;
+			display:inline-block;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif; 
+			margin-left: 15%;
+
+}

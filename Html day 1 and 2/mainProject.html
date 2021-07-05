@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<style>
+
+		/*Sliding right to left*/
+		div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left p {
+  animation: slide-left 30s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*Dropdown button*/
+.dropbtn {
+	height: 50px;
+	width: 150px;
+  background-color: #444444;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #000000; display: inline-block;}
+</style>
+
+
+	<title>Image tag</title>
+</head>
+
+
+<body>
+	<table cellspacing="0">
+
+<tr>
+	
+		<td style="background-color: #444444; 
+			font-family: Arial, Helvetica, sans-serif;"; width="1500" height="40px">
+
+		<div style=" height: 40px;width: 120px;display:inline-block; border: 0;background-color: #000000; text-align: center;padding-top: 22px; margin-right: -4px;outline-color: #FFFFFF;border-color: #FFFFFF;font-size: 16;color: #FFFFFF" >
+			Home
+		</div>
+<div class="dropdown">
+  <button class="dropbtn">Products
+  	<img src="drrrop.png" width="15px" height="15px">
+  </button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="products.html">Products</a>
+    <a href="aboutus.html">About us</a>
+  </div>
+</div>
+		<h1 style="display: inline; ;text-align: center; margin-left: 300px;color: #444444">Architect Furniture</h1>
+
+		<div style="text-align: right; width:100%; padding:0; display: inline; margin-left: 320px";>
+			<a href="Login.html">
+			<input type="button" value="Login" style="border-radius: 12px;border: 7px;background-color: #7EC0EE;color: #FFFFFF;border-color: #FFFFFF;outline-color: #FFFFFF;padding: 10px">
+			</a>
+		</div>
+
+		<div style="text-align: right; width:100%; padding:0; display: inline; margin-left: 10px">
+			<a href="Signup.html">
+			<input type="button" value="Register" style="border-radius: 12px;border: 7px;background-color: #7EC0EE;color: #FFFFFF;border-color: #FFFFFF;outline-color: #FFFFFF;padding: 10px">
+			</a>
+		</div>
+		</td>
+</tr>
+<tr>
+	<td style="font-size: 0; 
+			font-family: Arial, Helvetica, sans-serif;">
+			<img src="model.jpg" height="440" width="100%" style="display:block;  margin-right: auto; ">
+		</td>
+</tr>
+
+
+<tr>
+	<td>
+		<h2 style="display: inline;margin-left: 250px; 
+			font-family: Arial, Helvetica, sans-serif;">FREE SHIPPING</h2>
+		<h2 style="display: inline; margin-left: 80px; 
+			font-family: Arial, Helvetica, sans-serif;">9 DAY RETURNS</h2>
+		<h2 style="display: inline; margin-left: 80px; 
+			font-family: Arial, Helvetica, sans-serif;">24/7 SUPPORT</h2>
+	</td>
+</tr>
+
+<tr style="margin-top: -10px">
+	<td>
+		<h6 style="display:inline; margin-left: 250px; 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-family: Arial, Helvetica, sans-serif; ">on orders above $200</h6>
+		<h6 style="display: inline; margin-left: 180px; 
+			font-family: Arial, Helvetica, sans-serif; ">moneyback guarantee</h6>
+		<h6 style="display: inline; margin-left: 150px; 
+			font-family: Arial, Helvetica, sans-serif; ">online consultations</h6>
+	</td>
+</tr>
+
+<tr>
+<td>
+	<h3 style="margin-left: 250px;margin-right: auto;
+			font-family: Arial, Helvetica, sans-serif; margin-top: 50px;">BRANDS</h3>
+</td>	
+
+
+</tr>
+
+
+<tr>
+	<td>
+
+<div class="slide-left">
+	<p>
+	<img src="brand1.png" height="100" width="100">
+	<img src="brand2.jpg" height="100" width="100">
+	<img src="brand3.jpg" height="100" width="100">
+	<img src="brand4.jpg" height="100" width="100">
+	<img src="brand5.png" height="100" width="100">
+</p>
+</div>
+
+	</td>
+</tr>
+
+<tr style="background-color: #444444;">
+	<tr>
+		<td style="background-color: #444444; height: 50px">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: #444444;">
+		<h3 style="display: inline; margin-left: 250px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">INFORMATION</h3>
+		<h3 style="display: inline;margin-left: 80px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">COSTUMER SERVICE</h3>
+		<h3 style="display: inline;margin-left: 80px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">MY ACCOUNT</h3>
+		<h3 style="display: inline;margin-left: 80px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">CONTACT US</h3>
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: #444444">
+		<h6 style="display: inline; margin-left: 250px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">About us</h6>
+		<h6 style="display: inline;margin-left: 180px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">Online support</h6>
+		<h6 style="display: inline;margin-left: 200px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">My account</h6>
+		<h6 style="display: inline;margin-left: 150px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">142,Aricent infotech centre</h6>
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: #444444">
+		<h6 style="display: inline; margin-left: 250px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">Shipping & returns</h6>
+		<h6 style="display: inline;margin-left: 125px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">Help & FAQs</h6>
+		<h6 style="display: inline;margin-left: 210px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">Order History</h6>
+		<h6 style="display: inline;margin-left: 145px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">9898989898</h6>
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: #444444">
+		<h6 style="display: inline; margin-left: 250px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;; ">Privacy notice</h6>
+		<h6 style="display: inline;margin-left: 153px; color: #FFFFFF;		
+			font-family: Arial, Helvetica, sans-serif;">Call centre</h6>
+		<h6 style="display: inline;margin-left: 80px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;"></h6>
+		<h6 style="display: inline;margin-left: 355px; color: #FFFFFF; 
+			font-family: Arial, Helvetica, sans-serif;">info@aricent.com</h6>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="background-color: #444444; height: 50px">
+			
+		</td>
+	</tr>
+</tr>
+
+
+	</table>
+</body>
+</html>

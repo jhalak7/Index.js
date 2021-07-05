@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" src="../Javascript/coffeejs.js"></script>
+
+</head>
+
+<body style="background-color: #d2691e">
+<div style="width: 250px;height: 400px;background-color: #000000;margin-left: 50px;display: inline-block;">
+	<img src="../Images/regularim.jpg" width="250px" height="250px">
+	<h4 style="text-align: center; color: #FFFFFF">$9</h4>
+	<button style="background-color: #D96919;cursor: pointer; margin-bottom: 50px;text-align: center;margin-left: 70px;width: 120px;height: 40px;color: #FFFFFF;font-size: 18px;border-radius: 6px;" onclick="regular()">Buy now</button>
+</div>
+
+<div style="width: 250px;height: 400px;background-color: #000000; margin-left: 100px;display: inline-block;">
+	<img src="../Images/decafim.jpg" width="250px" height="250px">
+	<h4 style="text-align: center;color: #FFFFFF">$8</h4>
+	<button style="background-color: #D96919;cursor: pointer; margin-bottom: 50px;text-align: center;margin-left: 70px;width: 120px;height: 40px;color: #FFFFFF;font-size: 18px;border-radius: 6px" onclick="decaf()">Buy now</button>
+</div>
+
+<div style="width: 250px;height: 400px;background-color: #000000; margin-left: 100px;display: inline-block;">
+	<img src="../Images/mochaim.jpg" width="250px" height="250px">
+	<h4 style="text-align: center; color: #FFFFFF">$11</h4>
+	<button style="background-color: #D96919;cursor: pointer; margin-bottom: 50px;text-align: center;margin-left: 70px;width: 120px;height: 40px;color: #FFFFFF;font-size: 18px;border-radius: 6px" onclick="mocha()">Buy now</button>
+</div>
+<div style="width: 300px;height: 600px;background-color: #d2691e;display: inline-block;vertical-align: top;color: #d2691e" id="ch">
+	<table style="margin-top: 250px;">
+		<tr>
+			<th>Coffee</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td>Regular</td>
+			<td id="quanreg"></td>
+			<td>$9</td>
+			<td id="totreg"></td>
+		</tr>
+		<tr>
+			<td>Decaf</td>
+			<td id="quandec"></td>
+			<td>$8</td>
+			<td id="totdec"></td>
+		</tr>
+		<tr>
+			<td>Mocha</td>
+			<td id="quanmoc"></td>
+			<td>$11</td>
+			<td id="totmoc"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="totall"></td>
+		</tr>
+		<tr>
+			<td>Discount</td>
+			<td></td>
+			<td></td>
+			<td id="disc"></td>
+		</tr>
+		<tr>
+			<td>Total amount-</td>
+			<td></td>
+			<td></td>
+			<td id="finalAmount"></td>
+		</tr>
+
+		
+	</table>
+		</div>
+<button style="background-color: #000000;text-align: center;margin-left: 300px;width: 450px;height: 90px;color: #FFFFFF;;border-radius: 6px;cursor: pointer;font-size: 28px;margin-top: -199px;" onclick="checkout()">Checkout-></button>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="problemTwoJs.js">
+</script>
+	<title></title>
+</head>
+<body>
+	<h2>Employee:</h2>
+	<h3 id="showDetails"></h3>
+<button onclick="addProp()">add</button>
+<button onclick="changeProp()">change</button>
+<script type="text/javascript">
+	var employee={
+	firstName:"Amitabh",
+	lastName:"Bacchhan"
+				};
+	document.getElementById("showDetails").innerHTML=" ";
+	for(num in employee)
+	document.getElementById("showDetails").innerHTML+=" "+employee[num];
+
+
+function addProp()
+{	
+	document.getElementById("showDetails").innerHTML=" ";
+	employee.age="60";
+	for(num in employee)
+	document.getElementById("showDetails").innerHTML+=" "+employee[num];
+}
+
+function changeProp()
+{	
+	employee.firstName="Shahrukh";
+	employee.lastName="Khan";
+	document.getElementById("showDetails").innerHTML=" ";
+	for(num in employee)
+	document.getElementById("showDetails").innerHTML+=" "+employee[num];
+}
+
+</script>
+</body>
+</html>

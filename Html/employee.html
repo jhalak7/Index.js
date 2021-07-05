@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../Javascript/employeejs.js"></script>
+		<style type="text/css">
+		#first {
+			width: 760px;
+			height: 420px;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			background-color: #e7f5fe;
+			display:inline-block;		
+			margin-top: 130px;
+			margin-left: 290px;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif;
+
+}
+</style>
+
+</head>
+<body>
+	<div id="first">
+		<h2>Initial Employees: </h2>
+		<h5 id="ini"> </h5>
+
+		<h2>Modified Employees: </h2>
+		<h5 id="dis"> </h5>
+
+		<script type="text/javascript">
+			window.onload=emp();
+		</script>
+
+		<h4 style="display: inline-block;">Press this button to sort this Employee array: </h4>
+      <button style="background-color: #0000ff; display: inline-block;text-align: center;margin-left: 20px;width: 100px;height: 30px;color: #FFFFFF;border-radius: 6px" onclick="Sort()">Sort</button>
+
+		<h4 style="display: inline-block;">Press this button to reverse this Employee array: </h4>
+      <button style="background-color: #0000ff; display: inline-block;text-align: center;margin-left: 20px;width: 100px;height: 30px;color: #FFFFFF;border-radius: 6px" onclick="Reverse()">Reverse</button>
+
+		<h4 style="display: inline-block;">Press this button to remove last element of this Employee array: </h4>
+      <button style="background-color: #0000ff; display: inline-block;text-align: center;margin-left: 20px;width: 100px;height: 30px;color: #FFFFFF;border-radius: 6px" onclick="remove()">Remove</button>
+      
+
+		<h4 style="display: inline-block;">Press this button to Push an element Employee array: </h4>
+      <button style="background-color: #0000ff; display: inline-block;text-align: center;margin-left: 20px;width: 100px;height: 30px;color: #FFFFFF;border-radius: 6px" onclick="Push()">Push</button>
+      
+
+
+	</div>
+</body>
+</html>

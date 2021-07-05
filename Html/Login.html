@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="../Javascript/registration.js"></script>
+	<style type="text/css">
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+ 
+		#first {
+			width: 90%;
+			height: 550px;
+			background-image: linear-gradient(to right,rgb(5, 28, 235), rgb(8, 202, 236));
+			display: flex;
+			margin-top: 30px;
+			margin-left: 60px;
+			margin-right: 50px;
+			font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: row;
+
+}
+	#secondId{
+		width: 60%;
+		height: 500px;
+		background: white;
+		margin:auto;
+		margin-left: 3%;
+		margin-top: 4%;
+		border-bottom-right-radius: 70px;
+		border-top-right-radius: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+    input{
+        margin-right: 300px;
+        height: 30px;
+        width: 160px;
+        margin-bottom: -13px;
+    }
+    button{
+        background: rgb(5, 28, 235);
+        width: 100px;
+        height: 40px;
+        border-radius: 6px;
+        color: rgb(228, 224, 224);
+        border: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    a{
+        color: rgb(5, 28, 235);
+    }
+    h2{
+        font-size: 28px;
+        align-content: center;
+        margin-top: 60px;
+    }
+    p{
+        color: red;
+        font-size: 10px;
+        margin-right: 280px;
+    }
+	</style>
+</head>
+
+<body>
+	
+    <div id="first">
+		<div id="secondId">
+		<h2>Login</h2>
+      <form style="text-align: center;margin-top: 10px;margin-bottom: 20px;color: #000000;margin-left: 60px;">
+        Email:    <input id="emil" type = "email" style="margin-top: 10px;margin-left: 30px;" placeholder="Email *" oninput="inErrorLogin()" />
+        <p id="emailLoginError">Email can't be empty</p>
+        Password: <input id="pass" type = "password" style="margin-top: 10px" oninput="inErrorLogin()" placeholder="Password *" />
+        <p id="passLoginError">Password can't be empty</p>
+    </form>
+
+      <button id="loginId" disabled="true" onclick="inLogin()">Login</button>
+      <span>Dont have a account? <a href="Registration.html">Sign Up</a></span>
+
+	</div>
+    
+     </div>
+    
+</body>
+</html>

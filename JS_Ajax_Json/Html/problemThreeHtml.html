@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" src="../Javascript/problemThreeJs.js"></script>
+
+</head>
+
+<body style="border-color: #000000;border-width: 10px;border: all;border-style: solid;">
+<div style="width: 24%;height: 250px;resize: none;display: inline-block;margin: 5px">
+	<img id="resOne" src="../Resources/product1.jpg" style="margin-left: 110px;margin-top: 25px;cursor: pointer; width: 100px;height: 100px">
+	<button onclick="addPianoItems()" style="background-color: #d2691e;width: 90px;border-radius: 6px;height: 40px;margin-left: 110px;margin-top: 30px;">add to cart</button>
+</div>
+
+<div style="width: 24%;height: 250px;display: inline-block;resize: none;margin: 5px">
+	<img id="resTwo" src="../Resources/product3.jpg" style="margin-left: 110px;margin-top: 25px;cursor: pointer; width: 100px;height: 100px">
+	<button onclick="addJugItems()" style="background-color: #d2691e;width: 90px;border-radius: 6px;height: 40px;margin-left: 110px;margin-top: 30px;">add to cart</button>
+</div>
+ 
+<div style="width: 24%;height: 250px; display: inline-block;resize: none;margin: 5px">
+	<img id="resThree" src="../Resources/product2.jpg" style="margin-left: 110px;margin-top: 25px;cursor: pointer; width: 100px;height: 100px">
+	<button onclick="addSkullItems()" style="background-color: #d2691e;width: 90px;border-radius: 6px;height: 40px;margin-left: 110px;margin-top: 30px;">add to cart</button>
+</div>
+
+<div style="width: 24%;height: 250px;display: inline-block;resize: none;margin: 5px">
+	<img id="resFour" src="../Resources/product4.jpg.webp" style="margin-left: 110px;margin-top: 25px;cursor: pointer; width: 100px;height: 100px">
+	<button onclick="addRainbowItems()" style="background-color: #d2691e;width: 90px;border-radius: 6px;height: 40px;margin-left: 110px;margin-top: 30px;">add to cart</button>
+</div>
+
+<button style="margin-left: 600px;background-color: #555555;width: 120px;border-radius: 6px;height: 50px;color: #ffffff" onclick="showCart()">Show cart</button>
+<div style="width: 100%;height: 300px;background-color: #ffffff;display: inline-block;vertical-align: top;color: #ffffff" id="productDiv">
+	<table style="margin-top: 50px;">
+		<tr>
+			<th>Product</th>
+			<th>No. of Items</th>
+		</tr>
+		<tr>
+			<td>Piano</td>
+			<td id="pianoId"></td>
+		</tr>
+		<tr>
+			<td>Jug</td>
+			<td id="jugId"></td>
+		</tr>
+		<tr>
+			<td>Skull</td>
+			<td id="skullId"></td>
+		</tr>
+		<tr>
+			<td>Rainbow</td>
+			<td id="rainbowId"></td>
+		</tr>
+
+		
+	</table>
+		</div>
+</body>
+</html>

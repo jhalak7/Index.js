@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" src="../Javascript/mainSecondjs.js"></script>  
+	<style type="text/css">
+		#first {
+			width: 660px;
+			height: 440px;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			background-color: #e7f5fe;
+			display:inline-block;		
+			margin-top: 130px;
+			margin-left: 350px;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif;
+
+}
+</style>
+</head>
+<body>
+ <div id="first">
+ 	<h1 style="">Registration Form</h1>
+
+    	<form style="margin-left: 10px">
+    	
+        
+         Username: <input type = "text" id="onev"  style="margin-left: 58px; margin-top: 10px;" onclick="one()" />
+         
+         <p id="vone" style="display: inline; margin-left: 20px; color: #ff0000">***Username cant be blank</p>
+         <br>
+         <br>
+          Email id: <input type = "Email" id="twov" style="margin-left: 72px; margin-top: 10px;"  onclick="two()" />
+         
+         <p id="vtwo" style="display: inline; margin-left: 20px; color: #ff0000">***Enter the email</p>
+         <br>
+         <br>
+         Password: <input type = "Password" id="threev"  style="margin-left: 65px; margin-top: 10px;"  onclick="three()" />
+         
+         <p id="vthree" style="display: inline; margin-left: 20px; color: #ff0000">***Enter the password</p>
+         <br>
+         <br>
+         Retype Password: <input type = "Password" id="fourv" style="margin-left: 18px; margin-top: 10px;"  onclick="four()" />
+         
+         <p id="vfour" style="display: inline; margin-left: 20px; color: #ff0000">***Confirm password</p>
+         <br>
+         <br>
+         Mobile no.: <input type = "number" id="fivev"  style="margin-left: 66px; margin-top: 10px;"  onclick="five()" />
+         
+         <p id="vfive" style="display: inline; margin-left: 20px; color: #ff0000">***Enter the mobile number</p>
+         <br>
+         <br>
+
+    	</form>
+
+
+      <button style="background-color: #0000ff; margin-bottom: 0px;text-align: center;margin-left: 50px;width: 170px;height: 30px;color: #FFFFFF;border-radius: 6px" onclick="submitValues()">Submit</button>
+
+
+     </div>
+
+</body>
+</html>

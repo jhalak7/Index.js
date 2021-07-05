@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../Javascript/Stringjs.js"></script>
+</head>
+<body>
+<div id="stringDiv" style="width: 750px; height: 400px;margin-left: 330px;margin-top: 120px;background-color: #47ce8e;border-radius: 12px; border-color: #000000;border: solid;">
+
+			<b style="margin: 6px"><p id="nameText" style="margin-bottom: -1px;margin-top: 3px;margin-left: 5px">Name:</p></b>
+         <input type = "text" id = "stringName" style="margin-top: -10px;margin-left: 5px" />
+         <input type="checkbox" id="firstCheck" onclick="upper()" style="display: inline-block;margin-left: 25px"><b> Check to convert String into Uppercase,Uncheck to convert it into Lowercase</b>
+
+			<b style="margin: 6px"><p style="margin-bottom: -1px;margin-top: 13px;margin-left: 5px">E-mail Address:</p></b>
+
+         <input type ="text" id="emailCheck" style="margin-top: -10px;margin-left: 5px" />
+         <input type="checkbox" id="secondCheck" onclick="testEmail()" style="display: inline-block;margin-left: 25px"> <b>Test for email address</b>
+			<b style="margin: 6px"><p style="margin-bottom: -1px;margin-top: 13px;margin-left: 5px">Phone number:</p></b>
+
+         <input type = "text" id="phoneId" style="margin-top: -10px;margin-left: 5px" />
+			<b style="margin: 6px"><p style="margin-bottom: -1px;margin-top: 13px;margin-left: 5px">Fax number:</p></b>
+
+         <input type = "text" id="faxId" style="margin-top: -10px;margin-left: 5px" />
+         	<br>
+         	<br>
+
+         <button style="margin-left: 20px;" onclick="twoPhone()"><b>First two characters for Phone Number</b></button>
+         <br>
+         <br>
+
+         <button style="margin-left: 20px" onclick="faxLength()"><b>Fax number length</b></button>
+</div>
+</body>
+</html>

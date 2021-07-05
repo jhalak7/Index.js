@@ -1,0 +1,15 @@
+#set {
+			width: 760px;
+
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			background-color: lightblue;
+			display:inline-block;	
+			margin-left: 290px;
+			align-items: center;
+			vertical-align: top;
+			font-family: Arial, Helvetica, sans-serif;
+
+}
